@@ -31,7 +31,7 @@ const Testimonials = () => {
               <img 
                 src={image} 
                 alt={`Depoimento Aluno ${index + 1}`} 
-                className="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                className="w-full h-auto object-cover transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
             </div>
