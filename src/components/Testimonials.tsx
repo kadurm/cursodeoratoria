@@ -23,12 +23,12 @@ const Testimonials = () => {
           {testimonials.map((image, index) => (
             <div 
               key={index}
-              className="relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100"
+              className="relative group overflow-hidden rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100 aspect-[4/5]"
             >
               <img 
                 src={image} 
                 alt={`Depoimento Aluno ${index + 1}`} 
-                className="w-full h-auto object-cover transition-all duration-500"
+                className="w-full h-full object-cover block transition-all duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
             </div>
