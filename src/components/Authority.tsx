@@ -34,7 +34,7 @@ const Authority = () => {
       {/* Logo como Marca d'Água no Background */}
       <div className="absolute inset-0 flex items-center justify-center opacity-[0.05] pointer-events-none">
         <img 
-          src="/logo_sem_fundo.png" 
+          src="/logo_limpo.png" 
           alt="" 
           className="w-[60%] max-w-3xl object-contain rotate-12"
         />
