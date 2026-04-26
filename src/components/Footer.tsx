@@ -9,7 +9,7 @@ const Footer = () => {
             <img 
               src="/logo_krm.png" 
               alt="KrM Corp" 
-              className="h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              className="h-24 w-auto opacity-80 hover:opacity-100 transition-opacity"
             />
           </div>
           
