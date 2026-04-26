@@ -21,16 +21,26 @@ const CTA = () => {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
                 Garanta Sua Vaga Agora
               </h2>
-              <p className="text-xl sm:text-2xl text-gray-200 max-w-3xl mx-auto">
+              <p className="text-xl sm:text-2xl text-gray-200 max-w-3xl mx-auto mb-10">
                 As vagas são limitadas. Não perca a oportunidade de transformar sua comunicação profissional.
               </p>
+
+              {/* Card de Preço */}
+              <div className="inline-block bg-white bg-opacity-10 backdrop-blur-md rounded-3xl p-8 border border-white border-opacity-30 shadow-2xl transform hover:scale-105 transition-transform duration-300 mb-10">
+                <p className="text-cyan-400 font-semibold tracking-widest uppercase text-sm mb-2">Investimento</p>
+                <div className="flex items-baseline justify-center gap-2">
+                  <span className="text-2xl text-white font-medium">R$</span>
+                  <span className="text-6xl font-bold text-white tracking-tight">280,00</span>
+                </div>
+                <p className="text-teal-300 mt-3 font-medium text-lg">Em até 3x no cartão</p>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
               <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
                 <Calendar className="w-6 h-6 text-cyan-400 mx-auto mb-2" />
                 <p className="text-sm text-gray-300">Datas</p>
-                <p className="text-base font-bold text-white">24 e 25 de Março</p>
+                <p className="text-base font-bold text-white">20 e 21 de Maio</p>
               </div>
 
               <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">

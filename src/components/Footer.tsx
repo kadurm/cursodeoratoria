@@ -26,7 +26,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Calendar className="w-5 h-5 text-cyan-400 mr-3 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-400">24 e 25 de Março, 2026<br />19h às 22h30</span>
+                <span className="text-gray-400">20 e 21 de Maio, 2026<br />19h às 22h30</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 text-teal-400 mr-3 mt-0.5 flex-shrink-0" />

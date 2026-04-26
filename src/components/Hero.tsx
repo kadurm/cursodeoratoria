@@ -34,9 +34,12 @@ const Hero = () => {
           />
         </div>
 
-        <div className="mb-6">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
           <span className="inline-block px-6 py-2 bg-cyan-500 bg-opacity-20 backdrop-blur-sm border border-cyan-400 rounded-full text-cyan-300 text-sm font-semibold tracking-wide uppercase">
             Evento Presencial
+          </span>
+          <span className="inline-block px-6 py-2 bg-teal-500 bg-opacity-20 backdrop-blur-sm border border-teal-400 rounded-full text-teal-300 text-sm font-semibold tracking-wide uppercase">
+            Investimento: R$ 280
           </span>
         </div>
 
@@ -55,7 +58,7 @@ const Hero = () => {
           <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
             <Calendar className="w-8 h-8 text-cyan-400 mx-auto mb-3" />
             <p className="text-sm text-gray-300 mb-1">Datas</p>
-            <p className="text-lg font-bold text-white">24 e 25 de Março</p>
+            <p className="text-lg font-bold text-white">20 e 21 de Maio</p>
           </div>
 
           <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
