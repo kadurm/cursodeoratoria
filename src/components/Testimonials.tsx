@@ -5,9 +5,6 @@ const Testimonials = () => {
     '/depoimento-aluno-01.jpeg',
     '/depoimento-aluno-02.jpeg',
     '/depoimento-aluno-03.jpeg',
-    '/depoimento-aluno-04.jpeg',
-    '/depoimento-aluno-05.jpeg',
-    '/depoimento-aluno-06.jpeg',
   ];
 
   return (
