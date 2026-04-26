@@ -71,18 +71,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative inline-flex items-center justify-center px-8 sm:px-12 py-4 sm:py-5 text-lg sm:text-xl font-bold text-white bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full overflow-hidden shadow-2xl hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-105 w-full sm:w-auto"
-          >
-            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-teal-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-            <MessageCircle className="w-6 h-6 mr-3 relative z-10" />
-            <span className="relative z-10">Garantir Minha Vaga Agora</span>
-          </a>
-        </div>
+
 
         <p className="mt-8 text-gray-300 text-sm sm:text-base">
           <span className="inline-block bg-teal-500 bg-opacity-20 px-4 py-2 rounded-full border border-teal-400 border-opacity-30">
