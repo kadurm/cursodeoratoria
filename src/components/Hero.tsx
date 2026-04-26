@@ -16,7 +16,15 @@ const Hero = () => {
         <div className="absolute -bottom-1/2 -left-1/4 w-96 h-96 bg-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-700"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
+        <div className="flex justify-center mb-8">
+          <img 
+            src="/logo_sem_fundo.png" 
+            alt="Logo Oratória Délio" 
+            className="h-20 sm:h-28 w-auto drop-shadow-2xl animate-fade-in"
+          />
+        </div>
+
         <div className="mb-6">
           <span className="inline-block px-6 py-2 bg-cyan-500 bg-opacity-20 backdrop-blur-sm border border-cyan-400 rounded-full text-cyan-300 text-sm font-semibold tracking-wide uppercase">
             Evento Presencial
