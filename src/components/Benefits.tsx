@@ -31,6 +31,12 @@ const Benefits = () => {
       title: 'Impacto e Persuasão',
       description: 'Aprenda a estruturar discursos persuasivos que movem pessoas à ação e geram resultados concretos.',
       color: 'from-teal-600 to-blue-600'
+    },
+    {
+      icon: TrendingUp,
+      title: 'Liderança de Destaque',
+      description: 'Desenvolva uma comunicação que inspira equipes, projeta autoridade e acelera seu crescimento profissional.',
+      color: 'from-blue-600 to-cyan-600'
     }
   ];
 

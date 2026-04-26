@@ -53,11 +53,11 @@ const Authority = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
-          <div className="order-2 lg:order-1">
-            <div className="relative group">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch mb-16">
+          <div className="order-2 lg:order-1 h-full">
+            <div className="relative group h-full">
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
-              <div className="relative bg-white bg-opacity-10 backdrop-blur-md rounded-3xl overflow-hidden border border-white border-opacity-20 aspect-[4/5]">
+              <div className="relative bg-white bg-opacity-10 backdrop-blur-md rounded-3xl overflow-hidden border border-white border-opacity-20 h-full">
                 <img 
                   src="/foto-delio-01.jpeg" 
                   alt="Delio Pinheiro" 
@@ -67,8 +67,8 @@ const Authority = () => {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2">
-            <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-3xl p-8 sm:p-10 border border-white border-opacity-20">
+          <div className="order-1 lg:order-2 h-full">
+            <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-3xl p-8 sm:p-10 border border-white border-opacity-20 h-full flex flex-col justify-center">
               <h3 className="text-2xl font-bold text-white mb-6">
                 Por Que Aprender com Delio Pinheiro?
               </h3>
@@ -83,27 +83,25 @@ const Authority = () => {
               </p>
             </div>
           </div>
+        </div>
 
-          <div className="order-1 lg:order-2">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {credentials.map((credential, index) => (
-                <div
-                  key={index}
-                  className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 transform hover:-translate-y-1"
-                >
-                  <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-500 mb-4">
-                    <credential.icon className="w-6 h-6 text-white" />
-                  </div>
-                  <h4 className="text-lg font-bold text-white mb-2">
-                    {credential.title}
-                  </h4>
-                  <p className="text-gray-300 text-sm">
-                    {credential.description}
-                  </p>
-                </div>
-              ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {credentials.map((credential, index) => (
+            <div
+              key={index}
+              className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300 transform hover:-translate-y-1"
+            >
+              <div className="inline-flex p-3 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-500 mb-4">
+                <credential.icon className="w-6 h-6 text-white" />
+              </div>
+              <h4 className="text-lg font-bold text-white mb-2">
+                {credential.title}
+              </h4>
+              <p className="text-gray-300 text-sm">
+                {credential.description}
+              </p>
             </div>
-          </div>
+          ))}
         </div>
 
         <div className="bg-gradient-to-r from-cyan-500 to-teal-500 rounded-3xl p-8 sm:p-12 text-center shadow-2xl">

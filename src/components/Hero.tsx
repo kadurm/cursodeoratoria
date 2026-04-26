@@ -34,12 +34,9 @@ const Hero = () => {
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+        <div className="flex justify-center items-center mb-6">
           <span className="inline-block px-6 py-2 bg-cyan-500 bg-opacity-20 backdrop-blur-sm border border-cyan-400 rounded-full text-cyan-300 text-sm font-semibold tracking-wide uppercase">
             Evento Presencial
-          </span>
-          <span className="inline-block px-6 py-2 bg-teal-500 bg-opacity-20 backdrop-blur-sm border border-teal-400 rounded-full text-teal-300 text-sm font-semibold tracking-wide uppercase">
-            Investimento: R$ 280
           </span>
         </div>
 
@@ -53,6 +50,16 @@ const Hero = () => {
         <p className="text-xl sm:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed">
           Domine a arte de falar em público e transforme sua comunicação em uma ferramenta poderosa de influência e sucesso profissional
         </p>
+
+        {/* Card de Preço no Hero */}
+        <div className="inline-block bg-white bg-opacity-10 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-white border-opacity-30 shadow-2xl transform hover:scale-105 transition-transform duration-300 mb-12">
+          <p className="text-cyan-400 font-semibold tracking-widest uppercase text-xs sm:text-sm mb-2">Investimento</p>
+          <div className="flex items-baseline justify-center gap-2">
+            <span className="text-xl sm:text-2xl text-white font-medium">R$</span>
+            <span className="text-5xl sm:text-6xl font-bold text-white tracking-tight">280,00</span>
+          </div>
+          <p className="text-teal-300 mt-2 font-medium text-base sm:text-lg">Em até 3x no cartão</p>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto mb-12">
           <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
@@ -73,8 +80,6 @@ const Hero = () => {
             <p className="text-lg font-bold text-white">CDL Montes Claros</p>
           </div>
         </div>
-
-
 
         <p className="mt-8 text-gray-300 text-sm sm:text-base">
           <span className="inline-block bg-teal-500 bg-opacity-20 px-4 py-2 rounded-full border border-teal-400 border-opacity-30">

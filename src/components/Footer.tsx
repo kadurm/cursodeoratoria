@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="bg-slate-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div>
             <h3 className="text-xl font-bold text-white mb-4 bg-gradient-to-r from-cyan-400 to-teal-400 bg-clip-text text-transparent">
               Curso de Oratória
@@ -35,21 +35,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Entre em Contato</h4>
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-600 to-teal-600 text-white rounded-full hover:from-cyan-500 hover:to-teal-500 transition-all duration-300 transform hover:scale-105 shadow-lg"
-            >
-              <MessageCircle className="w-5 h-5 mr-2" />
-              WhatsApp: (38) 98823-1506
-            </a>
-            <p className="mt-4 text-sm text-gray-400">
-              Tire suas dúvidas e garanta sua vaga pelo WhatsApp
-            </p>
-          </div>
+
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center">
