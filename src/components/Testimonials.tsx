@@ -11,11 +11,8 @@ const Testimonials = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            O Que Dizem Nossos
-            <span className="block mt-2 bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent">
-              Alunos de Impacto
-            </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent">
+            Alunos de Impacto
           </h2>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto mt-6">
             Centenas de profissionais já transformaram suas carreiras e vidas através da nossa metodologia.
