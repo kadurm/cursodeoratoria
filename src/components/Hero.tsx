@@ -51,15 +51,7 @@ const Hero = () => {
           Domine a arte de falar em público e transforme sua comunicação em uma ferramenta poderosa de influência e sucesso profissional
         </p>
 
-        {/* Card de Preço no Hero */}
-        <div className="inline-block bg-white bg-opacity-10 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-white border-opacity-30 shadow-2xl transform hover:scale-105 transition-transform duration-300 mb-12">
-          <p className="text-cyan-400 font-semibold tracking-widest uppercase text-xs sm:text-sm mb-2">Investimento</p>
-          <div className="flex items-baseline justify-center gap-2">
-            <span className="text-xl sm:text-2xl text-white font-medium">R$</span>
-            <span className="text-5xl sm:text-6xl font-bold text-white tracking-tight">280,00</span>
-          </div>
-          <p className="text-teal-300 mt-2 font-medium text-base sm:text-lg">Em até 3x no cartão</p>
-        </div>
+
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto mb-12">
           <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
