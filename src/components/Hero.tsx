@@ -1,4 +1,4 @@
-import { Calendar, Clock, MapPin, MessageCircle } from 'lucide-react';
+import { Calendar, Clock, MapPin, MessageCircle, Award } from 'lucide-react';
 
 const Hero = () => {
   const whatsappNumber = '5538988231506';
@@ -45,6 +45,13 @@ const Hero = () => {
         </p>
 
 
+
+        {/* Card de Inclusões no Hero */}
+        <div className="inline-block bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 shadow-xl mb-12">
+          <Award className="w-8 h-8 text-teal-400 mx-auto mb-3" />
+          <p className="text-gray-300 text-sm mb-1">Inclui</p>
+          <p className="text-xl font-bold text-white">Material + Certificado</p>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto mb-12">
           <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
