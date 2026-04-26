@@ -26,40 +26,43 @@ const CTA = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
-              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center flex flex-col justify-center transform hover:scale-105 transition-transform duration-300">
-                <p className="text-cyan-400 font-semibold tracking-widest uppercase text-[10px] mb-1">Investimento</p>
-                <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-sm text-white font-medium">R$</span>
-                  <span className="text-3xl font-bold text-white tracking-tight">280,00</span>
+              {/* Card de Preço Padronizado */}
+              <div className="flex justify-center mb-10">
+                <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20 text-center flex flex-col justify-center transform hover:scale-105 transition-transform duration-300 min-w-[240px]">
+                  <p className="text-cyan-400 font-semibold tracking-widest uppercase text-xs mb-2">Investimento</p>
+                  <div className="flex items-baseline justify-center gap-1">
+                    <span className="text-xl text-white font-medium">R$</span>
+                    <span className="text-5xl font-bold text-white tracking-tight">280,00</span>
+                  </div>
+                  <p className="text-teal-300 mt-2 font-medium text-sm">Em até 3x no cartão</p>
                 </div>
-                <p className="text-teal-300 mt-1 font-medium text-[10px]">Em até 3x no cartão</p>
               </div>
 
-              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
-                <Calendar className="w-6 h-6 text-cyan-400 mx-auto mb-2" />
-                <p className="text-sm text-gray-300">Datas</p>
-                <p className="text-base font-bold text-white">20 e 21 de Maio</p>
-              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+                <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
+                  <Calendar className="w-6 h-6 text-cyan-400 mx-auto mb-2" />
+                  <p className="text-sm text-gray-300">Datas</p>
+                  <p className="text-base font-bold text-white">20 e 21 de Maio</p>
+                </div>
 
-              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
-                <Clock className="w-6 h-6 text-teal-400 mx-auto mb-2" />
-                <p className="text-sm text-gray-300">Horário</p>
-                <p className="text-base font-bold text-white">19h às 22h30</p>
-              </div>
+                <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
+                  <Clock className="w-6 h-6 text-teal-400 mx-auto mb-2" />
+                  <p className="text-sm text-gray-300">Horário</p>
+                  <p className="text-base font-bold text-white">19h às 22h30</p>
+                </div>
 
-              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
-                <MapPin className="w-6 h-6 text-cyan-400 mx-auto mb-2" />
-                <p className="text-sm text-gray-300">Local</p>
-                <p className="text-base font-bold text-white">CDL Montes Claros</p>
-              </div>
+                <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
+                  <MapPin className="w-6 h-6 text-cyan-400 mx-auto mb-2" />
+                  <p className="text-sm text-gray-300">Local</p>
+                  <p className="text-base font-bold text-white">CDL Montes Claros</p>
+                </div>
 
-              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
-                <Award className="w-6 h-6 text-teal-400 mx-auto mb-2" />
-                <p className="text-sm text-gray-300">Inclui</p>
-                <p className="text-base font-bold text-white">Material + Certificado</p>
+                <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
+                  <Award className="w-6 h-6 text-teal-400 mx-auto mb-2" />
+                  <p className="text-sm text-gray-300">Inclui</p>
+                  <p className="text-base font-bold text-white">Material + Certificado</p>
+                </div>
               </div>
-            </div>
 
             <div className="text-center">
               <a
