@@ -46,14 +46,14 @@ const Hero = () => {
 
 
 
-        {/* Card de Inclusões no Hero */}
-        <div className="inline-block bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 shadow-xl mb-12">
-          <Award className="w-8 h-8 text-teal-400 mx-auto mb-3" />
-          <p className="text-gray-300 text-sm mb-1">Inclui</p>
-          <p className="text-xl font-bold text-white">Material + Certificado</p>
-        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto mb-12">
+          {/* Card de Inclusões */}
+          <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 shadow-xl hover:bg-opacity-20 transition-all duration-300">
+            <Award className="w-8 h-8 text-teal-400 mx-auto mb-3" />
+            <p className="text-sm text-gray-300 mb-1">Inclui</p>
+            <p className="text-lg font-bold text-white">Material + Certificado</p>
+          </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-4xl mx-auto mb-12">
           <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
             <Calendar className="w-8 h-8 text-cyan-400 mx-auto mb-3" />
             <p className="text-sm text-gray-300 mb-1">Datas</p>
