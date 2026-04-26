@@ -25,18 +25,16 @@ const CTA = () => {
                 As vagas são limitadas. Não perca a oportunidade de transformar sua comunicação profissional.
               </p>
 
-              {/* Card de Preço */}
-              <div className="inline-block bg-white bg-opacity-10 backdrop-blur-md rounded-3xl p-8 border border-white border-opacity-30 shadow-2xl transform hover:scale-105 transition-transform duration-300 mb-10">
-                <p className="text-cyan-400 font-semibold tracking-widest uppercase text-sm mb-2">Investimento</p>
-                <div className="flex items-baseline justify-center gap-2">
-                  <span className="text-2xl text-white font-medium">R$</span>
-                  <span className="text-6xl font-bold text-white tracking-tight">280,00</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
+              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center flex flex-col justify-center transform hover:scale-105 transition-transform duration-300">
+                <p className="text-cyan-400 font-semibold tracking-widest uppercase text-[10px] mb-1">Investimento</p>
+                <div className="flex items-baseline justify-center gap-1">
+                  <span className="text-sm text-white font-medium">R$</span>
+                  <span className="text-3xl font-bold text-white tracking-tight">280,00</span>
                 </div>
-                <p className="text-teal-300 mt-3 font-medium text-lg">Em até 3x no cartão</p>
+                <p className="text-teal-300 mt-1 font-medium text-[10px]">Em até 3x no cartão</p>
               </div>
-            </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
               <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
                 <Calendar className="w-6 h-6 text-cyan-400 mx-auto mb-2" />
                 <p className="text-sm text-gray-300">Datas</p>
