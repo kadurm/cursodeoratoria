@@ -24,6 +24,7 @@ const CTA = () => {
               <p className="text-xl sm:text-2xl text-gray-200 max-w-3xl mx-auto mb-10">
                 As vagas são limitadas. Não perca a oportunidade de transformar sua comunicação profissional.
               </p>
+            </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
               <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center flex flex-col justify-center transform hover:scale-105 transition-transform duration-300">
