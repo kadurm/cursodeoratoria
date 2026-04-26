@@ -18,7 +18,7 @@ const Hero = () => {
         {/* Logo como Marca d'Água no Background */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full flex items-center justify-center opacity-[0.03] pointer-events-none">
           <img 
-            src="/logo_limpo.png" 
+            src="/logo_sem_fundo.png" 
             alt="" 
             className="w-[80%] max-w-4xl object-contain"
           />
@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
         <div className="flex justify-center mb-8">
           <img 
-            src="/logo_limpo.png" 
+            src="/logo_sem_fundo.png" 
             alt="Logo Oratória Délio" 
             className="h-20 sm:h-28 w-auto drop-shadow-2xl animate-fade-in"
           />
