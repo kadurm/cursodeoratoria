@@ -4,6 +4,7 @@ import Authority from './components/Authority';
 import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import FloatingButton from './components/FloatingButton';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Testimonials />
       <CTA />
       <Footer />
+      <FloatingButton />
     </div>
   );
 }

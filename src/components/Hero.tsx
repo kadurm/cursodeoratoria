@@ -80,17 +80,8 @@ const Hero = () => {
             </span>
           </div>
 
-          <a
-            href={whatsappLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative inline-flex items-center justify-center px-12 py-5 text-xl font-bold text-slate-900 bg-gradient-to-r from-cyan-400 to-teal-400 rounded-full overflow-hidden shadow-2xl hover:shadow-cyan-400/50 transition-all duration-300 transform hover:scale-105"
-          >
-            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-teal-400 to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-            <MessageCircle className="w-6 h-6 mr-3 relative z-10" />
-            <span className="relative z-10">Fazer Inscrição</span>
-          </a>
         </div>
+
 
 
       </div>
