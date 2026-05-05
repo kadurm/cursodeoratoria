@@ -1,7 +1,6 @@
 import sys
 import os
 from rembg import remove
-from PIL import Image
 
 def process_image(input_path, output_path):
     print(f"Processando: {input_path}")

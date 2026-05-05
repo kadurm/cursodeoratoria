@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stories Premium - 1080x1920</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      gap: 100px;
+      font-family: 'Outfit', sans-serif;
+    }
+    .story {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      width: 1080px;
+      height: 1920px;
+      padding: 80px 60px;
+    }
+    
+    .bg-gradient-custom {
+      background: radial-gradient(circle at 50% 20%, #164e63 0%, #0f172a 60%, #000 100%);
+    }
+    
+    .glow-circle {
+      position: absolute;
+      width: 1200px;
+      height: 1200px;
+      border-radius: 50%;
+      filter: blur(180px);
+      opacity: 0.2;
+      z-index: 1;
+    }
+
+    .speech-balloon {
+      position: relative;
+      background: rgba(15, 23, 42, 0.4);
+      border: 1px solid rgba(34, 211, 238, 0.3);
+      border-radius: 4rem;
+      padding: 4rem;
+      box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.6);
+      z-index: 10;
+    }
+    
+    .tail-bottom-right { border-bottom-right-radius: 0; }
+    .tail-bottom-left { border-bottom-left-radius: 0; }
+
+    .info-bar-story {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 100%;
+      padding: 3rem;
+      border-radius: 3rem;
+      margin-top: auto;
+      z-index: 50;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+    }
+    .info-item { display: flex; align-items: center; gap: 1.5rem; }
+    .info-icon { font-size: 2rem; opacity: 0.8; }
+    .info-text { display: flex; flex-direction: column; }
+    .info-label {
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: #94a3b8;
+      letter-spacing: 0.2em;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .info-value {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .text-gradient-cyan {
+      background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-teal {
+      background: linear-gradient(135deg, #2dd4bf 0%, #14b8a6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- STORIES 1: O CONVITE -->
+  
+  <!-- Slide 1.1: Intro -->
+  <div id="story-1-1" class="story bg-gradient-custom text-white">
+    <div class="glow-circle" style="top: 10%; right: -20%; background: #06b6d4;"></div>
+    <div class="flex justify-center mb-20 z-50">
+      <img src="./Arquivos/LogoDéioOratóriaSemFundo.png" alt="Logo" class="h-28">
+    </div>
+    <div class="speech-balloon tail-bottom-right w-full mb-12">
+      <p class="text-3xl font-light uppercase tracking-[0.4em] text-slate-400 mb-6 text-center">Curso de Oratória</p>
+      <h1 class="text-8xl font-black uppercase leading-tight tracking-tighter text-center">
+        Comunicação<br/>de <span class="text-gradient-cyan">Alto Impacto</span>
+      </h1>
+    </div>
+    <div class="relative flex-1">
+      <img src="./Arquivos/Fotos Délio/foto-delio-01_no_bg.png" alt="Délio" class="absolute bottom-[-100px] left-1/2 -translate-x-1/2 h-[1100px] object-contain" style="z-index: 20; -webkit-mask-image: linear-gradient(to top, transparent 0%, black 15%);">
+    </div>
+    <div class="info-bar-story">
+      <div class="flex justify-around w-full">
+        <div class="info-item"><div class="info-icon">📅</div><div class="info-text"><span class="info-label">Data</span><span class="info-value">20 e 21 de Maio</span></div></div>
+        <div class="info-item"><div class="info-icon">🕒</div><div class="info-text"><span class="info-label">Horário</span><span class="info-value">19h às 22h30</span></div></div>
+      </div>
+      <div class="h-px w-full bg-white/10"></div>
+      <div class="info-item justify-center"><div class="info-icon">📍</div><div class="info-text"><span class="info-label">Local</span><span class="info-value">CDL Montes Claros</span></div></div>
+    </div>
+  </div>
+
+  <!-- Slide 1.2: O Problema -->
+  <div id="story-1-2" class="story bg-gradient-custom text-white">
+    <div class="glow-circle" style="top: 30%; left: -20%; background: #ef4444; opacity: 0.15;"></div>
+    <div class="flex justify-center mb-20 z-50">
+      <img src="./Arquivos/LogoDéioOratóriaSemFundo.png" alt="Logo" class="h-28">
+    </div>
+    <div class="flex-1 flex flex-col items-center justify-center">
+      <div class="speech-balloon w-full text-center border-red-500/20 py-20">
+        <p class="text-4xl font-light uppercase tracking-[0.4em] text-slate-500 mb-10">Sua mensagem</p>
+        <h2 class="text-9xl font-black uppercase leading-none tracking-tighter">
+          se perde no<br/>
+          <span class="text-red-500 mt-6 block">nervosismo?</span>
+        </h2>
+      </div>
+    </div>
+    <div class="info-bar-story">
+      <div class="flex justify-around w-full">
+        <div class="info-item"><div class="info-icon">📅</div><div class="info-text"><span class="info-label">Data</span><span class="info-value">20 e 21 de Maio</span></div></div>
+        <div class="info-item"><div class="info-icon">🕒</div><div class="info-text"><span class="info-label">Horário</span><span class="info-value">19h às 22h30</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 1.3: CTA -->
+  <div id="story-1-3" class="story bg-gradient-custom text-white">
+    <div class="glow-circle" style="bottom: 20%; right: -20%; background: #22d3ee; opacity: 0.4;"></div>
+    <div class="flex justify-center mb-20 z-50">
+      <img src="./Arquivos/LogoDéioOratóriaSemFundo.png" alt="Logo" class="h-28">
+    </div>
+    <div class="flex-1 flex flex-col items-center justify-center">
+      <div class="speech-balloon w-full text-center mb-24 py-16">
+        <p class="text-4xl font-light uppercase tracking-[0.3em] text-slate-400 mb-10">Domine a arte de</p>
+        <h2 class="text-9xl font-black uppercase tracking-tighter mb-12">Falar em<br/>público</h2>
+        <div class="h-2 w-48 bg-cyan-500 mx-auto rounded-full mb-12"></div>
+        <p class="text-5xl font-bold text-cyan-400 uppercase tracking-widest">Garanta sua vaga</p>
+      </div>
+      <div class="bg-cyan-500 text-slate-900 px-20 py-10 rounded-full text-6xl font-black uppercase tracking-[0.2em] shadow-[0_0_100px_rgba(34,211,238,0.5)] animate-pulse">Inscreva-se</div>
+    </div>
+    <div class="info-bar-story">
+      <div class="flex justify-around w-full">
+        <div class="info-item"><div class="info-icon">📅</div><div class="info-text"><span class="info-label">Data</span><span class="info-value">20 e 21 de Maio</span></div></div>
+        <div class="info-item"><div class="info-icon">🕒</div><div class="info-text"><span class="info-label">Horário</span><span class="info-value">19h às 22h30</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STORIES 2: A JORNADA -->
+  
+  <!-- Slide 4.1: Intro -->
+  <div id="story-4-1" class="story bg-gradient-custom text-white">
+    <div class="glow-circle" style="top: 10%; left: -20%; background: #14b8a6;"></div>
+    <div class="flex justify-center mb-16 z-50">
+      <img src="./Arquivos/LogoDéioOratóriaSemFundo.png" alt="Logo" class="h-28">
+    </div>
+    <div class="speech-balloon tail-bottom-left w-full mb-12 border-white/10">
+      <p class="text-3xl font-light uppercase tracking-[0.4em] text-slate-400 mb-4 text-center">Curso de Oratória</p>
+      <h2 class="text-6xl font-black text-cyan-400 uppercase text-center">Comunicação de<br/>Alto Impacto</h2>
+    </div>
+    <div class="px-10 z-20 mb-12">
+      <h2 class="text-8xl font-black mb-12 leading-tight">O que você<br/>vai <span class="text-gradient-teal">aprender?</span></h2>
+      <ul class="text-4xl space-y-10 font-medium text-slate-300">
+        <li class="flex items-center gap-8"><div class="w-12 h-12 rounded-full bg-teal-500/20 border border-teal-500/50 flex items-center justify-center text-teal-400 text-2xl">✓</div>Controle da Ansiedade</li>
+        <li class="flex items-center gap-8"><div class="w-12 h-12 rounded-full bg-teal-500/20 border border-teal-500/50 flex items-center justify-center text-teal-400 text-2xl">✓</div>Linguagem Corporal</li>
+        <li class="flex items-center gap-8"><div class="w-12 h-12 rounded-full bg-teal-500/20 border border-teal-500/50 flex items-center justify-center text-teal-400 text-2xl">✓</div>Persuasão e Influência</li>
+      </ul>
+    </div>
+    <div class="relative flex-1">
+      <img src="./Arquivos/Fotos Délio/foto-delio-06_no_bg.png" alt="Délio" class="absolute bottom-[-100px] right-[-50px] h-[950px] object-contain" style="z-index: 30; -webkit-mask-image: linear-gradient(to top, transparent 0%, black 15%);">
+    </div>
+    <div class="info-bar-story">
+      <div class="flex justify-around w-full">
+        <div class="info-item"><div class="info-icon">📅</div><div class="info-text"><span class="info-label">Data</span><span class="info-value">20 e 21 de Maio</span></div></div>
+        <div class="info-item"><div class="info-icon">🕒</div><div class="info-text"><span class="info-label">Horário</span><span class="info-value">19h às 22h30</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 4.2: Metodologia -->
+  <div id="story-4-2" class="story bg-gradient-custom text-white">
+    <div class="glow-circle" style="top: 40%; right: -20%; background: #06b6d4; opacity: 0.2;"></div>
+    <div class="flex justify-center mb-20 z-50">
+      <img src="./Arquivos/LogoDéioOratóriaSemFundo.png" alt="Logo" class="h-28">
+    </div>
+    <div class="flex-1 flex flex-col items-center justify-center">
+      <div class="speech-balloon w-full text-center border-teal-500/20 py-24">
+        <p class="text-4xl font-light uppercase tracking-[0.4em] text-slate-500 mb-12">Técnicas práticas</p>
+        <h2 class="text-7xl font-black uppercase leading-[1.1] tracking-tighter">
+          Transforme sua fala<br/>
+          em uma ferramenta<br/>
+          <span class="text-gradient-teal text-9xl block mt-8">de poder.</span>
+        </h2>
+      </div>
+    </div>
+    <div class="info-bar-story">
+      <div class="flex justify-around w-full">
+        <div class="info-item"><div class="info-icon">📅</div><div class="info-text"><span class="info-label">Data</span><span class="info-value">20 e 21 de Maio</span></div></div>
+        <div class="info-item"><div class="info-icon">🕒</div><div class="info-text"><span class="info-label">Horário</span><span class="info-value">19h às 22h30</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Slide 4.3: Escassez -->
+  <div id="story-4-3" class="story bg-gradient-custom text-white">
+    <div class="glow-circle" style="top: 20%; right: -20%; background: #eab308; opacity: 0.15;"></div>
+    <div class="flex justify-center mb-20 z-50">
+      <img src="./Arquivos/LogoDéioOratóriaSemFundo.png" alt="Logo" class="h-28">
+    </div>
+    <div class="flex-1 flex flex-col items-center justify-center">
+      <div class="speech-balloon w-full text-center border-yellow-500/20 py-24">
+        <h2 class="text-[10rem] font-black uppercase mb-8 tracking-tighter">Últimas<br/>Vagas</h2>
+        <div class="h-3 w-64 bg-yellow-500 mx-auto rounded-full mb-14"></div>
+        <p class="text-5xl font-medium text-yellow-500/80 uppercase tracking-[0.2em] leading-relaxed">
+          Turmas reduzidas para<br/>
+          máximo aproveitamento.
+        </p>
+      </div>
+    </div>
+    <div class="info-bar-story">
+      <div class="flex justify-around w-full">
+        <div class="info-item"><div class="info-icon">📅</div><div class="info-text"><span class="info-label">Data</span><span class="info-value">20 e 21 de Maio</span></div></div>
+        <div class="info-item"><div class="info-icon">🕒</div><div class="info-text"><span class="info-label">Horário</span><span class="info-value">19h às 22h30</span></div></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
