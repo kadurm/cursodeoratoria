@@ -28,13 +28,13 @@ const CTA = () => {
 
               {/* Card de Preço Padronizado */}
               <div className="flex justify-center mb-10">
-                <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 border border-white border-opacity-20 text-center flex flex-col justify-center transform hover:scale-105 transition-transform duration-300 min-w-[240px]">
-                  <p className="text-cyan-400 font-semibold tracking-widest uppercase text-xs mb-2">Investimento</p>
+                <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 sm:p-5 border border-white border-opacity-20 text-center flex flex-col justify-center transform hover:scale-105 transition-transform duration-300 w-full sm:w-auto sm:min-w-[280px]">
+                  <p className="text-cyan-400 font-semibold tracking-widest uppercase text-[10px] mb-1">Investimento</p>
                   <div className="flex items-baseline justify-center gap-1">
-                    <span className="text-xl text-white font-medium">R$</span>
-                    <span className="text-5xl font-bold text-white tracking-tight">280,00</span>
+                    <span className="text-lg text-white font-medium">R$</span>
+                    <span className="text-3xl font-bold text-white tracking-tight">280,00</span>
                   </div>
-                  <p className="text-teal-300 mt-2 font-medium text-sm">Em até 3x no cartão</p>
+                  <p className="text-teal-300 mt-1 font-medium text-xs opacity-80">Em até 3x no cartão</p>
                 </div>
               </div>
 
