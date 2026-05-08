@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center">
             <img 
-              src="/logo_krm.png" 
+              src="/LogoKrM_Final_Extreme.png" 
               alt="KrM Corp" 
               className="h-24 w-auto opacity-80 hover:opacity-100 transition-opacity"
             />
