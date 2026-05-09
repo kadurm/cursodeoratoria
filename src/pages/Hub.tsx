@@ -1,6 +1,7 @@
 import { MapPin, Calendar, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import Authority from '../components/Authority';
 
 const Hub = () => {
   const courses = [
@@ -10,7 +11,7 @@ const Hub = () => {
       date: '20 e 21 de Maio',
       location: 'CDL Montes Claros',
       path: '/',
-      image: '/foto-delio-01.jpeg'
+      image: '/cdl-montes-claros.jpeg'
     },
     {
       id: 'taiobeiras',
@@ -18,7 +19,7 @@ const Hub = () => {
       date: '12 de Junho',
       location: 'Auditório Hospital Santo Antônio',
       path: '/taiobeiras',
-      image: '/foto-delio-02.jpeg'
+      image: '/auditorio-santo-antonio.jpeg'
     }
   ];
 
@@ -89,6 +90,7 @@ const Hub = () => {
         </div>
       </section>
 
+      <Authority />
       <Footer />
     </div>
   );
