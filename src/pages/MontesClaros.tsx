@@ -10,7 +10,9 @@ function MontesClaros() {
   const courseData = {
     date: '20 e 21 de Maio',
     location: 'CDL Montes Claros',
-    whatsappMessage: 'Olá! Gostaria de me inscrever no Curso de Oratória em Montes Claros - Comunicação de Alto Impacto.'
+    whatsappMessage: 'Olá! Gostaria de me inscrever no Curso de Oratória em Montes Claros - Comunicação de Alto Impacto.',
+    price: '280,00',
+    hours: '19h às 22h30'
   };
 
   return (
@@ -19,6 +21,8 @@ function MontesClaros() {
         date={courseData.date} 
         location={courseData.location} 
         whatsappMessage={courseData.whatsappMessage} 
+        price={courseData.price}
+        hours={courseData.hours}
       />
       <Benefits />
       <Authority />
@@ -28,6 +32,8 @@ function MontesClaros() {
         location={courseData.location} 
         whatsappMessage={courseData.whatsappMessage} 
         buttonText="Garantir minha Vaga"
+        price={courseData.price}
+        hours={courseData.hours}
       />
       <Footer />
       <FloatingButton 

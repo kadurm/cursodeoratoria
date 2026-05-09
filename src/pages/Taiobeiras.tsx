@@ -10,7 +10,9 @@ function Taiobeiras() {
   const courseData = {
     date: '12 de Junho',
     location: 'Auditório do Hospital Santo Antônio',
-    whatsappMessage: 'Olá! Gostaria de me inscrever no Curso de Oratória em Taiobeiras - Comunicação de Alto Impacto.'
+    whatsappMessage: 'Olá! Gostaria de me inscrever no Curso de Oratória em Taiobeiras - Comunicação de Alto Impacto.',
+    price: '150,00',
+    hours: '19h às 22h'
   };
 
   return (
@@ -19,6 +21,8 @@ function Taiobeiras() {
         date={courseData.date} 
         location={courseData.location} 
         whatsappMessage={courseData.whatsappMessage} 
+        price={courseData.price}
+        hours={courseData.hours}
       />
       <Benefits />
       <Authority />
@@ -28,6 +32,8 @@ function Taiobeiras() {
         location={courseData.location} 
         whatsappMessage={courseData.whatsappMessage} 
         buttonText="Quero me inscrever agora"
+        price={courseData.price}
+        hours={courseData.hours}
       />
       <Footer />
       <FloatingButton 

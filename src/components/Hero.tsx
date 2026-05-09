@@ -4,9 +4,11 @@ interface HeroProps {
   date: string;
   location: string;
   whatsappMessage: string;
+  price: string;
+  hours: string;
 }
 
-const Hero = ({ date, location, whatsappMessage }: HeroProps) => {
+const Hero = ({ date, location, whatsappMessage, price, hours }: HeroProps) => {
   const whatsappNumber = '5538988231506';
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -62,7 +64,7 @@ const Hero = ({ date, location, whatsappMessage }: HeroProps) => {
           <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
             <Clock className="w-8 h-8 text-teal-400 mx-auto mb-3" />
             <p className="text-sm text-gray-300 mb-1">Horário</p>
-            <p className="text-lg font-bold text-white">19h às 22h30</p>
+            <p className="text-lg font-bold text-white">{hours}</p>
           </div>
 
           <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
@@ -75,7 +77,7 @@ const Hero = ({ date, location, whatsappMessage }: HeroProps) => {
         <div className="flex flex-col items-center gap-8 mt-4">
           <div className="flex justify-center items-center">
             <span className="inline-block px-8 py-3 bg-teal-500 bg-opacity-20 backdrop-blur-sm border border-teal-400 rounded-full text-teal-300 text-lg font-bold tracking-wide uppercase">
-              Investimento: R$ 280,00
+              Investimento: R$ {price}
             </span>
           </div>
         </div>

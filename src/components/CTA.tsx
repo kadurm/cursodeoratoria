@@ -5,9 +5,11 @@ interface CTAProps {
   location: string;
   whatsappMessage: string;
   buttonText: string;
+  price: string;
+  hours: string;
 }
 
-const CTA = ({ date, location, whatsappMessage, buttonText }: CTAProps) => {
+const CTA = ({ date, location, whatsappMessage, buttonText, price, hours }: CTAProps) => {
   const whatsappNumber = '5538988231506';
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -36,7 +38,7 @@ const CTA = ({ date, location, whatsappMessage, buttonText }: CTAProps) => {
                   <p className="text-cyan-400 font-semibold tracking-widest uppercase text-[10px] mb-1">Investimento</p>
                   <div className="flex items-baseline justify-center gap-1">
                     <span className="text-lg text-white font-medium">R$</span>
-                    <span className="text-3xl font-bold text-white tracking-tight">280,00</span>
+                    <span className="text-3xl font-bold text-white tracking-tight">{price}</span>
                   </div>
                   <p className="text-teal-300 mt-1 font-medium text-xs opacity-80">Em até 3x no cartão</p>
                 </div>
@@ -52,7 +54,7 @@ const CTA = ({ date, location, whatsappMessage, buttonText }: CTAProps) => {
                 <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
                   <Clock className="w-6 h-6 text-teal-400 mx-auto mb-2" />
                   <p className="text-sm text-gray-300">Horário</p>
-                  <p className="text-base font-bold text-white">19h às 22h30</p>
+                  <p className="text-base font-bold text-white">{hours}</p>
                 </div>
 
                 <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
