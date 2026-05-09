@@ -12,7 +12,7 @@ function Taiobeiras() {
     location: 'Auditório do Hospital Santo Antônio',
     whatsappMessage: 'Olá! Gostaria de me inscrever no Curso de Oratória em Taiobeiras - Comunicação de Alto Impacto.',
     price: '150,00',
-    hours: '19h às 22h'
+    hours: '08h00 da manhã'
   };
 
   return (
