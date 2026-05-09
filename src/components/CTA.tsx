@@ -1,11 +1,14 @@
 import { MessageCircle, Calendar, Clock, MapPin, Award } from 'lucide-react';
 
-const CTA = () => {
+interface CTAProps {
+  date: string;
+  location: string;
+  whatsappMessage: string;
+}
+
+const CTA = ({ date, location, whatsappMessage }: CTAProps) => {
   const whatsappNumber = '5538988231506';
-  const whatsappMessage = encodeURIComponent(
-    'Olá! Gostaria de me inscrever no Curso de Oratória - Comunicação de Alto Impacto.'
-  );
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <section className="py-20 sm:py-28 bg-gradient-to-br from-white via-cyan-50 to-teal-50">
@@ -42,7 +45,7 @@ const CTA = () => {
                 <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
                   <Calendar className="w-6 h-6 text-cyan-400 mx-auto mb-2" />
                   <p className="text-sm text-gray-300">Datas</p>
-                  <p className="text-base font-bold text-white">20 e 21 de Maio</p>
+                  <p className="text-base font-bold text-white">{date}</p>
                 </div>
 
                 <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
@@ -54,7 +57,7 @@ const CTA = () => {
                 <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">
                   <MapPin className="w-6 h-6 text-cyan-400 mx-auto mb-2" />
                   <p className="text-sm text-gray-300">Local</p>
-                  <p className="text-base font-bold text-white">CDL Montes Claros</p>
+                  <p className="text-base font-bold text-white">{location}</p>
                 </div>
 
                 <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-4 border border-white border-opacity-20 text-center">

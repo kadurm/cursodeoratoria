@@ -1,22 +1,17 @@
-import Hero from './components/Hero';
-import Benefits from './components/Benefits';
-import Authority from './components/Authority';
-import Testimonials from './components/Testimonials';
-import CTA from './components/CTA';
-import Footer from './components/Footer';
-import FloatingButton from './components/FloatingButton';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MontesClaros from './pages/MontesClaros';
+import Taiobeiras from './pages/Taiobeiras';
+import Hub from './pages/Hub';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Hero />
-      <Benefits />
-      <Authority />
-      <Testimonials />
-      <CTA />
-      <Footer />
-      <FloatingButton />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MontesClaros />} />
+        <Route path="/taiobeiras" element={<Taiobeiras />} />
+        <Route path="/cursos" element={<Hub />} />
+      </Routes>
+    </Router>
   );
 }
 

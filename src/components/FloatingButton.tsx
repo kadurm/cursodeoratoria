@@ -1,12 +1,12 @@
-import React from 'react';
 import { MessageCircle } from 'lucide-react';
 
-const FloatingButton = () => {
+interface FloatingButtonProps {
+  whatsappMessage: string;
+}
+
+const FloatingButton = ({ whatsappMessage }: FloatingButtonProps) => {
   const whatsappNumber = '5538988231506';
-  const whatsappMessage = encodeURIComponent(
-    'Olá! Gostaria de me inscrever no Curso de Oratória - Comunicação de Alto Impacto.'
-  );
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <div className="fixed bottom-6 right-6 z-50">

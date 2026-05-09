@@ -1,11 +1,14 @@
-import { Calendar, Clock, MapPin, MessageCircle, Award } from 'lucide-react';
+import { Calendar, Clock, MapPin, Award, MessageCircle } from 'lucide-react';
 
-const Hero = () => {
+interface HeroProps {
+  date: string;
+  location: string;
+  whatsappMessage: string;
+}
+
+const Hero = ({ date, location, whatsappMessage }: HeroProps) => {
   const whatsappNumber = '5538988231506';
-  const whatsappMessage = encodeURIComponent(
-    'Olá! Gostaria de me inscrever no Curso de Oratória - Comunicação de Alto Impacto.'
-  );
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-cyan-900 to-teal-900">
@@ -14,8 +17,6 @@ const Hero = () => {
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-1/2 -right-1/4 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
         <div className="absolute -bottom-1/2 -left-1/4 w-96 h-96 bg-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse delay-700"></div>
-        
-
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
@@ -44,8 +45,6 @@ const Hero = () => {
           Domine a arte de falar em público e transforme sua comunicação em uma ferramenta poderosa de influência e sucesso profissional
         </p>
 
-
-
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto mb-12">
           {/* Card de Inclusões */}
           <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 shadow-xl hover:bg-opacity-20 transition-all duration-300">
@@ -57,7 +56,7 @@ const Hero = () => {
           <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
             <Calendar className="w-8 h-8 text-cyan-400 mx-auto mb-3" />
             <p className="text-sm text-gray-300 mb-1">Datas</p>
-            <p className="text-lg font-bold text-white">20 e 21 de Maio</p>
+            <p className="text-lg font-bold text-white">{date}</p>
           </div>
 
           <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
@@ -69,7 +68,7 @@ const Hero = () => {
           <div className="bg-white bg-opacity-10 backdrop-blur-md rounded-2xl p-6 border border-white border-opacity-20 hover:bg-opacity-20 transition-all duration-300">
             <MapPin className="w-8 h-8 text-cyan-400 mx-auto mb-3" />
             <p className="text-sm text-gray-300 mb-1">Local</p>
-            <p className="text-lg font-bold text-white">CDL Montes Claros</p>
+            <p className="text-lg font-bold text-white">{location}</p>
           </div>
         </div>
 
@@ -80,10 +79,17 @@ const Hero = () => {
             </span>
           </div>
 
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center justify-center px-10 py-5 text-xl font-bold text-slate-900 bg-gradient-to-r from-cyan-400 to-teal-400 rounded-full overflow-hidden shadow-2xl hover:shadow-cyan-400/50 transition-all duration-300 transform hover:scale-105"
+          >
+            <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-teal-400 to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+            <MessageCircle className="w-6 h-6 mr-3 relative z-10" />
+            <span className="relative z-10">Quero me inscrever agora</span>
+          </a>
         </div>
-
-
-
       </div>
 
       <div className="absolute bottom-0 left-0 right-0">

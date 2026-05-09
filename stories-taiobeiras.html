@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criativo Story - Taiobeiras</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Outfit', sans-serif;
+    }
+    .story {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      width: 1080px;
+      height: 1920px;
+      padding: 80px 60px;
+    }
+    
+    .bg-gradient-custom {
+      background: radial-gradient(circle at 50% 20%, #164e63 0%, #0f172a 60%, #000 100%);
+    }
+    
+    .glow-circle {
+      position: absolute;
+      width: 1200px;
+      height: 1200px;
+      border-radius: 50%;
+      filter: blur(180px);
+      opacity: 0.2;
+      z-index: 1;
+    }
+
+    .speech-balloon {
+      position: relative;
+      background: rgba(15, 23, 42, 0.4);
+      border: 1px solid rgba(34, 211, 238, 0.3);
+      border-radius: 4rem;
+      padding: 4rem;
+      box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.6);
+      z-index: 10;
+    }
+    
+    .tail-bottom-right { border-bottom-right-radius: 0; }
+
+    .info-bar-story {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 100%;
+      padding: 3rem;
+      border-radius: 3rem;
+      margin-top: auto;
+      z-index: 50;
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(15px);
+    }
+    .info-item { display: flex; align-items: center; gap: 1.5rem; }
+    .info-icon { font-size: 2rem; opacity: 0.8; }
+    .info-text { display: flex; flex-direction: column; }
+    .info-label {
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: #94a3b8;
+      letter-spacing: 0.2em;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+    .info-value {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .text-gradient-cyan {
+      background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="story-taiobeiras" class="story bg-gradient-custom text-white">
+    <div class="glow-circle" style="top: 10%; right: -20%; background: #06b6d4;"></div>
+    <div class="flex justify-center mb-20 z-50">
+      <img src="./Arquivos/LogoDéioOratóriaSemFundo.png" alt="Logo" class="h-28">
+    </div>
+    <div class="speech-balloon tail-bottom-right w-full mb-12">
+      <p class="text-3xl font-light uppercase tracking-[0.4em] text-slate-400 mb-6 text-center">Curso de Oratória</p>
+      <h1 class="text-8xl font-black uppercase leading-tight tracking-tighter text-center">
+        Comunicação<br/>de <span class="text-gradient-cyan">Alto Impacto</span>
+      </h1>
+    </div>
+    <div class="relative flex-1">
+      <img src="./Arquivos/Fotos Délio/foto-delio-01_no_bg.png" alt="Délio" class="absolute bottom-[-100px] left-1/2 -translate-x-1/2 h-[1100px] object-contain" style="z-index: 20; -webkit-mask-image: linear-gradient(to top, transparent 0%, black 15%);">
+    </div>
+    <div class="info-bar-story">
+      <div class="flex justify-around w-full">
+        <div class="info-item"><div class="info-icon">📅</div><div class="info-text"><span class="info-label">Data</span><span class="info-value">12 de Junho</span></div></div>
+        <div class="info-item"><div class="info-icon">🕒</div><div class="info-text"><span class="info-label">Horário</span><span class="info-value">8h da manhã</span></div></div>
+      </div>
+      <div class="h-px w-full bg-white/10"></div>
+      <div class="info-item justify-center"><div class="info-icon">📍</div><div class="info-text"><span class="info-label">Local</span><span class="info-value">Auditório Hospital Santo Antônio - Taiobeiras</span></div></div>
+    </div>
+  </div>
+
+</body>
+</html>
