@@ -4,9 +4,10 @@ interface CTAProps {
   date: string;
   location: string;
   whatsappMessage: string;
+  buttonText: string;
 }
 
-const CTA = ({ date, location, whatsappMessage }: CTAProps) => {
+const CTA = ({ date, location, whatsappMessage, buttonText }: CTAProps) => {
   const whatsappNumber = '5538988231506';
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -76,7 +77,7 @@ const CTA = ({ date, location, whatsappMessage }: CTAProps) => {
               >
                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-teal-400 to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                 <MessageCircle className="w-7 h-7 mr-3 relative z-10" />
-                <span className="relative z-10">Garantir minha Vaga</span>
+                <span className="relative z-10">{buttonText}</span>
               </a>
 
               <p className="mt-6 text-gray-300 text-base sm:text-lg">

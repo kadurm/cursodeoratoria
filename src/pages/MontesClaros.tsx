@@ -27,9 +27,13 @@ function MontesClaros() {
         date={courseData.date} 
         location={courseData.location} 
         whatsappMessage={courseData.whatsappMessage} 
+        buttonText="Garantir minha Vaga"
       />
       <Footer />
-      <FloatingButton whatsappMessage={courseData.whatsappMessage} />
+      <FloatingButton 
+        whatsappMessage={courseData.whatsappMessage} 
+        buttonText="Garantir minha Vaga"
+      />
     </div>
   );
 }

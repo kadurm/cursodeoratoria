@@ -27,9 +27,13 @@ function Taiobeiras() {
         date={courseData.date} 
         location={courseData.location} 
         whatsappMessage={courseData.whatsappMessage} 
+        buttonText="Quero me inscrever agora"
       />
       <Footer />
-      <FloatingButton whatsappMessage={courseData.whatsappMessage} />
+      <FloatingButton 
+        whatsappMessage={courseData.whatsappMessage} 
+        buttonText="Quero me inscrever agora"
+      />
     </div>
   );
 }

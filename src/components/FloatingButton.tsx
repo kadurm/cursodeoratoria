@@ -2,9 +2,10 @@ import { MessageCircle } from 'lucide-react';
 
 interface FloatingButtonProps {
   whatsappMessage: string;
+  buttonText: string;
 }
 
-const FloatingButton = ({ whatsappMessage }: FloatingButtonProps) => {
+const FloatingButton = ({ whatsappMessage, buttonText }: FloatingButtonProps) => {
   const whatsappNumber = '5538988231506';
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -18,7 +19,7 @@ const FloatingButton = ({ whatsappMessage }: FloatingButtonProps) => {
       >
         <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-teal-400 to-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
         <MessageCircle className="w-6 h-6 mr-3 relative z-10 animate-bounce" />
-        <span className="relative z-10">Garantir minha Vaga</span>
+        <span className="relative z-10">{buttonText}</span>
       </a>
     </div>
   );
