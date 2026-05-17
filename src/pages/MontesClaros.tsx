@@ -4,7 +4,6 @@ import Authority from '../components/Authority';
 import Testimonials from '../components/Testimonials';
 import CTA from '../components/CTA';
 import Footer from '../components/Footer';
-import FloatingButton from '../components/FloatingButton';
 
 function MontesClaros() {
   const courseData = {
@@ -36,10 +35,6 @@ function MontesClaros() {
         hours={courseData.hours}
       />
       <Footer />
-      <FloatingButton 
-        whatsappMessage={courseData.whatsappMessage} 
-        buttonText="Garantir minha Vaga"
-      />
     </div>
   );
 }
